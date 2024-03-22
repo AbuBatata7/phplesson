@@ -13,8 +13,10 @@
 </form>
 
 <?php
-    $name = $_GET['person'];
-    echo $name." likes soccer";
+    //This gets something from the database
+    function() {}
+    /*$name = $_GET['person'];
+    echo $name." likes soccer";*/
 
 ?>
 
