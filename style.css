@@ -4,3 +4,7 @@ p {
     font-family: Arial;
     margin-top: 38vh;
 }
+
+nav {
+    background-color: darkgrey;
+}
