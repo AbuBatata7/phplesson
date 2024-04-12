@@ -48,3 +48,10 @@
     </div>
   </div>
 </nav>
+
+<?php
+
+  $_SESSION['username'] = "AbuBatata7";
+  echo $_SESSION['username'];
+
+?>
