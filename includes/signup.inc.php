@@ -3,10 +3,10 @@ if (isset($_POST['signup-submit'])) {
     
 require 'dbh.inc.php';
 
-$username = $_POST['uid']
-$email = $_POST['mail']
-$password = $_POST['pwd']
-$passwordRepeat = $_POST['pwd-repeat']
+$username = $_POST['uid'];
+$email = $_POST['mail'];
+$password = $_POST['pwd'];
+$passwordRepeat = $_POST['pwd-repeat'];
 
 if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
     header("Location: ../signup.php?error=emptyfields&uid=".$username."&mail=".$email);
@@ -59,7 +59,7 @@ else {
 
         mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
         mysqli_stmt_execute($stmt);
-        header("Location: ../signup.php?signup=success");
+        header("Location: signup.php");
         exit();
     }
 
@@ -71,7 +71,7 @@ else {
 
 }
 else {
-    header("Location: ../signup.php");
+    header("Location: signup.php");
     exit();
 }
 
